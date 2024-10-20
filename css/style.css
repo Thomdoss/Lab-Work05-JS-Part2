@@ -1,0 +1,147 @@
+/* Global styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+body {
+   background-color: #f4f4f9;
+   color: #333;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Header styles */
+header {
+   width: 100%;
+   background-color: #333;
+   padding: 10px 0;
+}
+
+header nav {
+   max-width: 800px;
+   margin: auto;
+}
+
+#main-nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+}
+
+#main-nav ul li {
+   margin: 0 15px;
+}
+
+#main-nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+#main-nav ul li a:hover {
+   color: #ddd;
+}
+
+/* Main container */
+main {
+   width: 50%;
+   margin: 20px auto;
+   padding: 30px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the membership radio buttons */
+.membership-option {
+   display: block;
+   margin-bottom: 15px;
+}
+
+h1 {
+   text-align: center;
+   color: #444;
+   margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='radio'] {
+   margin: 5px 0 15px 0;
+   padding: 8px;
+   width: 100%;
+   max-width: 500px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+form input[type='radio'] {
+   width: auto;
+}
+
+button {
+   background-color: #333;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 5px 5px 0 0;
+}
+
+button:hover {
+   background-color: #555;
+}
+
+#send {
+   background-color: #4caf50;
+}
+
+#send:hover {
+   background-color: #45a049;
+}
+
+#cancel {
+   background-color: #f44336;
+}
+
+#cancel:hover {
+   background-color: #d32f2f;
+}
+
+/* Result and Output section */
+#output,
+#result {
+   margin-top: 20px;
+   padding: 10px;
+   background-color: #e8f0fe;
+   border: 1px solid #90caf9;
+   border-radius: 4px;
+   color: #333;
+   font-weight: bold;
+   margin-bottom: 50px;
+}
+
+/* Footer styles */
+footer {
+   width: 100%;
+   text-align: center;
+   padding: 10px 0;
+   margin-top: 20px;
+   background-color: #333;
+   color: #fff;
+   font-size: 0.9em;
+   position: fixed;
+   bottom: 0;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Home</title>
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <header>
+         <nav id="main-nav">
+            <nav>
+               <ul>
+                  <li>
+                     <a href="./index.html">Home</a>
+                  </li>
+                  <li>
+                     <a href="./excel.html">Excel</a>
+                  </li>
+               </ul>
+            </nav>
+         </nav>
+      </header>
+
+      <main>
+         <form id="main-form" name="mainform">
+            First Name<input type="text" name="FN" id="fn" />
+            <br />
+            Last Name<input type="text" name="LN" id="ln" />
+            <br />
+            Email <input type="email" name="Email" id="email" />
+            <br />
+            Address <input type="text" name="address" id="address" />
+            <br />
+            City <input type="text" name="City" id="ci" />
+            <br />
+            Province <input type="text" name="Province" id="pro" />
+            <br />
+            <br />
+
+            <div class="membership-option">
+               <input type="radio" name="member" id="Premium" checked />
+               <label for="Premium">Premium Membership</label>
+            </div>
+            <div class="membership-option">
+               <input type="radio" name="member" id="Standard" />
+               <label for="Standard">Standard Membership</label>
+            </div>
+            <div class="membership-option">
+               <input type="radio" name="member" id="Basic" />
+               <label for="Basic">Basic Membership</label>
+            </div>
+            <button id="send">Send</button>
+            <button id="cancel">Cancel</button>
+         </form>
+         <div id="output">
+            <!-- here is where the user should see the result (output) -->
+         </div>
+      </main>
+
+      <script src="./java/main.js"></script>
+
+      <footer>
+         Copyright © 2024 ILAC and EFREI Paris - Created by : Thomas DOS SANTOS - All rights
+         reserved
+      </footer>
+   </body>
+</html>
