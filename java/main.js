@@ -47,22 +47,22 @@ function resetForm() {
 }
 
 function numbersArea() {
-   let numbers = document.getElementById('numbers').value;
+   let number = document.getElementById('numbers').value;
 
-   let numbersINT = numbers
+   let numbers = number
       .trim() // Delete the first and last space
       .split(/\s+/) // Divide the string by 1 or more space.
-      .filter((value) => !isNaN(value)) // Only integer
+      .filter((value) => !isNaN(value) && value.trim() !== '') // Filter values which are numbers
       .map(Number); // Convert string into Int
 
-   return numbersINT;
+   return numbers;
 }
 
 function autoSum() {
    let numbers = numbersArea();
    let sum = 0;
    for (let i = 0; i < numbers.length; i++) {
-      sum = sum + parseInt(numbers[i]);
+      sum = sum + numbers[i];
    }
    return sum;
 }
